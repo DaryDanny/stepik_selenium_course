@@ -8,7 +8,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 #ссылка, по которой нет кнопки добавления в корзину
 #link = "http://selenium1py.pythonanywhere.com/accounts/login/"
 
-def test_guest_should_see_login_link(browser):
+def test_add_button_existence(browser):
     browser.implicitly_wait(5)
     browser.get(link)
     #добавила sleep только для того, чтобы визуально оценить выбор нужного языка, для ожидания прогрузки кнопки на странице реализован implicitly_wait
